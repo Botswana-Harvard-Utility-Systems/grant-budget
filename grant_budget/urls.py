@@ -16,6 +16,8 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path
 
+app_name = 'grant_budget'
+
 urlpatterns = [
     path('admin/', admin.site.urls),
 ]
