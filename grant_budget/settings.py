@@ -36,15 +36,17 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'grant_budget.apps.GrantBudgetConfig',
-    'django.contrib.sites.apps.SitesConfig',
     'bhp_personnel.apps.AppConfig',
     'django_crypto_fields.apps.AppConfig',
+    'django.contrib.sites.apps.SitesConfig',
+    'edc_base.apps.AppConfig',
+
 ]
 KEY_PATH = '/etc/grant-budget/django_crypto_fields'
 ETC_DIR = '/etc/'
 # AUTO_CREATE_KEYS = True
 APP_NAME = 'grant_budget'
-
+SITE_ID = 9
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
