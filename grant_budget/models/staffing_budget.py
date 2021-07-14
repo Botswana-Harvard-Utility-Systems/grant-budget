@@ -1,8 +1,11 @@
 from django.db import models
-from .dept_budget import DepartmentBudget
+
+from edc_base.model_mixins import BaseUuidModel
+from grant_budget.models.personal_budget import DepartmentBudget
 
 
-class Budget(models.Model):
+class StaffingBudget(BaseUuidModel):
+
     department_budgets = models.ForeignKey(DepartmentBudget, on_delete=models.CASCADE)
     fte = models.FloatField()
     duration = models.IntegerField()
