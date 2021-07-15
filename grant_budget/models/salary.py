@@ -6,6 +6,7 @@ from bhp_personnel.models.employee import Employee
 class Salary(BaseUuidModel):
     employee = models.OneToOneField(
         Employee,
+        verbose_name="Employee",
         on_delete=models.CASCADE
     )
 
