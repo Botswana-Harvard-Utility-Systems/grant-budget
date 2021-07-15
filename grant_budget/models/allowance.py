@@ -1,5 +1,6 @@
 from django.db import models
 from edc_base.model_mixins import BaseUuidModel
+from django.core.validators import MinValueValidator, MaxValueValidator
 from .salary import Salary
 
 
@@ -15,6 +16,7 @@ class Allowance(BaseUuidModel):
 
     amount = models.DecimalField(
         verbose_name="Amount",
+        validators=[MinValueValidator(1), ],
         max_digits=10,
         decimal_places=2)
 

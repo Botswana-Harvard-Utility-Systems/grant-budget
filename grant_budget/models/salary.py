@@ -1,3 +1,4 @@
+from django.core.validators import MinValueValidator
 from django.db import models
 from edc_base.model_mixins import BaseUuidModel
 from bhp_personnel.models.employee import Employee
@@ -11,6 +12,7 @@ class Salary(BaseUuidModel):
 
     gross_salary = models.DecimalField(
         verbose_name="Gross Salary",
+        validators=[MinValueValidator(1), ],
         max_digits=10,
         decimal_places=2)
 

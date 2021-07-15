@@ -1,3 +1,4 @@
+from django.core.validators import MinValueValidator, MaxValueValidator
 from django.db import models
 
 from edc_base.model_mixins import BaseUuidModel
@@ -12,6 +13,7 @@ class StaffingBudget(BaseUuidModel):
 
     fte = models.FloatField(
         verbose_name="FTE",
+        validators=[MinValueValidator(1), MaxValueValidator(100)],
         help_text="FTE in should be in (%)")
 
     duration = models.IntegerField(
