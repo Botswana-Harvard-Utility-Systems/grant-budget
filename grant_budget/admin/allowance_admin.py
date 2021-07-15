@@ -5,5 +5,5 @@ from ..main_admin import grand_budget_admin
 
 
 @admin.register(Allowance, site=grand_budget_admin)
-class SalaryAdmin(admin.ModelAdmin):
+class AllowanceAdmin(admin.ModelAdmin):
     form = AllowanceForm

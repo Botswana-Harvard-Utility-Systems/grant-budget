@@ -32,5 +32,5 @@ class Position(BaseUuidModel):
 
     class Meta:
         app_label = 'grant_budget'
-        verbose_name = 'Grand Budget'
-        verbose_name_plural = 'Grant Budget'
+        verbose_name = 'Position'
+        verbose_name_plural = 'Positions'

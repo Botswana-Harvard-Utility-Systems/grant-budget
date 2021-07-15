@@ -19,10 +19,14 @@ class PersonnelBudget(BaseUuidModel):
         verbose_name="Name",
         max_length=50)
 
+    start = models.DateField(verbose_name="Start", )
+
+    end = models.DateField(verbose_name="Start", )
+
     def __str__(self):
         return f'{self.name}'
 
     class Meta:
         app_label = 'grant_budget'
-        verbose_name = 'Personal Budget'
-        verbose_name_plural = 'Personal Budget'
+        verbose_name = 'Personnel Budget'
+        verbose_name_plural = 'Personnel Budget'
