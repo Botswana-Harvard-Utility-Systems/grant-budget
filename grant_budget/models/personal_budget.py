@@ -13,8 +13,7 @@ class PersonnelBudget(BaseUuidModel):
     position = models.OneToOneField(
         Position,
         verbose_name="Position",
-        on_delete=models.CASCADE
-    )
+        on_delete=models.CASCADE)
 
     name = models.CharField(
         verbose_name="Name",
