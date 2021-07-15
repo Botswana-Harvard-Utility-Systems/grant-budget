@@ -7,8 +7,7 @@ from .staffing_budget import StaffingBudget
 
 class PersonalBudget(BaseUuidModel):
     
-    # TODO: add the cascade...on the foreign key
-    staffing_budget = models.ForeignKey(StaffingBudget, )
+    staffing_budget = models.ForeignKey(StaffingBudget, on_delete=models.CASCADE)
 
 
     def __str__(self):
