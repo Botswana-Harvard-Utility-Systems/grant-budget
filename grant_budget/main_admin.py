@@ -1,5 +1,6 @@
 from django.contrib.admin import AdminSite
 
+
 class GrandBudgetAdminSite(AdminSite):
     pass
 

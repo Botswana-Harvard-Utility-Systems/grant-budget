@@ -3,7 +3,6 @@ from edc_base.model_mixins import BaseUuidModel
 
 
 class Position(BaseUuidModel):
-
     name = models.CharField(
         verbose_name="Name of the Position",
         max_length=50,
@@ -17,13 +16,13 @@ class Position(BaseUuidModel):
         null=True)
 
     salary_range_lower = models.FloatField(
-        verbose_name="Salary range lower amouunt",
+        verbose_name="Salary range lower amount",
         max_length=50,
         blank=True,
         null=True)
 
     salary_range_upper = models.FloatField(
-        verbose_name="Salary range upper amouunt",
+        verbose_name="Salary range upper amount",
         max_length=50,
         blank=True,
         null=True)

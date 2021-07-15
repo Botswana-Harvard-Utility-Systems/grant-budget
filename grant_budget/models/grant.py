@@ -4,7 +4,6 @@ from edc_base.model_mixins import BaseUuidModel
 
 
 class Grant(BaseUuidModel):
-
     pi = models.CharField(
         verbose_name="PI name",
         max_length=50,

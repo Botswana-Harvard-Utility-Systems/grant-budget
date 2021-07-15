@@ -1,9 +1,8 @@
 from django import forms
-from ..models import PersonalBudget
+from ..models import PersonnelBudget
 
 
 class PersonnelBudgetForm(forms.ModelForm):
-
     class Meta:
-        model = PersonalBudget
+        model = PersonnelBudget
         fields = '__all__'
