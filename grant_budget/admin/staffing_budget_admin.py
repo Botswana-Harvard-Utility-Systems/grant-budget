@@ -6,10 +6,12 @@ from ..main_admin import grand_budget_admin
 
 
 class PersonnelBudgetAdmin(admin.TabularInline):
+
     model = PersonalBudget
 
 
 @admin.register(StaffingBudget, site=grand_budget_admin)
 class StaffingBudgetAdmin(admin.ModelAdmin):
+
     form = StuffingBudgetForm
-    inlines = [PersonalBudget, ]
+    inlines = [PersonnelBudgetAdmin, ]

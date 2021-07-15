@@ -3,7 +3,7 @@ from edc_base.model_mixins import BaseUuidModel
 
 
 class Position(BaseUuidModel):
-    
+
     name = models.CharField(
         verbose_name="Name of the Position",
         max_length=50,

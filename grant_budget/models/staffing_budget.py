@@ -9,3 +9,7 @@ class StaffingBudget(BaseUuidModel):
     fte = models.FloatField()
     duration = models.IntegerField()
 
+    class Meta:
+        app_label = 'grant_budget'
+        verbose_name = 'Grand Budget'
+        verbose_name_plural = 'Grant Budget'

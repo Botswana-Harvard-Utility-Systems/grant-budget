@@ -6,4 +6,5 @@ from ..main_admin import grand_budget_admin
 
 @admin.register(Position, site=grand_budget_admin)
 class PositionAdmin(admin.ModelAdmin):
+
     form = PositionForm

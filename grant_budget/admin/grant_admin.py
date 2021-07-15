@@ -6,4 +6,5 @@ from ..main_admin import grand_budget_admin
 
 @admin.register(Grant, site=grand_budget_admin)
 class GrantAdmin(admin.ModelAdmin):
+
     form = GrantForm

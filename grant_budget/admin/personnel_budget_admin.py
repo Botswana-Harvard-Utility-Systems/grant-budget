@@ -6,4 +6,5 @@ from ..main_admin import grand_budget_admin
 
 @admin.register(PersonalBudget, site=grand_budget_admin)
 class PersonnelAdmin(admin.ModelAdmin):
+
     form = PersonnelBudgetForm
