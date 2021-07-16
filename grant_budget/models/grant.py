@@ -4,7 +4,6 @@ from edc_base.model_mixins import BaseUuidModel
 
 
 class Grant(BaseUuidModel):
-
     pi = models.CharField(
         verbose_name="PI name",
         max_length=50,
@@ -32,5 +31,5 @@ class Grant(BaseUuidModel):
 
     class Meta:
         app_label = 'grant_budget'
-        verbose_name = 'Grand Budget'
-        verbose_name_plural = 'Grant Budget'
+        verbose_name = 'Grant'
+        verbose_name_plural = 'Grants'
