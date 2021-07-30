@@ -42,11 +42,12 @@ INSTALLED_APPS = [
     'edc_base.apps.AppConfig',
 
 ]
-KEY_PATH = '/etc/grant-budget/django_crypto_fields'
+
 ETC_DIR = '/etc/'
-# AUTO_CREATE_KEYS = True
+
 APP_NAME = 'grant_budget'
 SITE_ID = 9
+
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
